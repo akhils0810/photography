@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Sathwik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <strong>AS</strong> Akhil Sathwik </a>
+            </div>
+
+            <ul class="navbar-links">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="box">
+                <h4>Hello there!</h4>
+                <h1>I'm Akhil Sathwik</h1>
+                <p>
+                    I am freelance photographer based on Hyderabad, India. I love to capture the wild, happy and real
+                    moments of life
+                </p>
+                <a href="#works" class="btn">My works</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="about bg-light" id="about">
+        <div class="container">
+            <div class="box">
+                <h2 class="title">
+                    Akhil Sathwik, a freelance photographer based on Hyderabad, Telangana, India
+                </h2>
+                <p>
+                    I started my photography journey a year ago, driven by a passion for capturing moments that tell a story. With every shot, I’ve learned to see the world through a more creative lens, refining my skills and developing my unique perspective. Photography has become more than just a hobby—it's a way for me to express emotions, preserve memories, and showcase the beauty in everyday life.
+                </p>
+            </div>
+
+            <div class="about-img">
+                <div class="img">
+                    <img src="./images/PXL_20241226_104503246.jpg" alt="Akhil Sathwik">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery bg-dark" id="works">
+        <div class="heading">
+            <h2 class="title">My Works</h2>
+        </div>
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="image tall" onclick="openLightbox(this)">
+                    <img src="./images/album/1.jpg" alt="1" />
+                </div>
+                <div class="image wide" onclick="openLightbox(this)">
+                    <img src="./images/album/2.jpg" alt="2" />
+                </div>
+                <div class="image tall" onclick="openLightbox(this)">
+                    <img src="./images/album/3.jpg" alt="3" />
+                </div>
+                <div class="image" onclick="openLightbox(this)">
+                    <img src="./images/album/4.jpg" alt="4" />
+                </div>
+                <div class="image" onclick="openLightbox(this)">
+                    <img src="./images/album/5.jpg" alt="5" />
+                </div>
+                <div class="image wide" onclick="openLightbox(this)">
+                    <img src="./images/album/6.jpg" alt="6" />
+                </div>
+                <div class="image tall" onclick="openLightbox(this)">
+                    <img src="./images/album/7.jpg" alt="7" />
+                </div>
+                <div class="image" onclick="openLightbox(this)">
+                    <img src="./images/album/8.jpg" alt="8" />
+                </div>
+                <div class="image" onclick="openLightbox(this)">
+                    <img src="./images/album/9.jpg" alt="9" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
+    <footer class="footer">
+        <div class="second-footer">
+            <div class="container">
+                <div class="box">
+                    <div class="logo-wrapper">
+                        <a class="logo" href="index.html"> <strong>AS</strong> Akhil Sathwik</a>
+                    </div>
+                    <div class="text">
+                        <p>Shinzō wo Sasageyo!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3 class="title">Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span>+91 9963178764</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-at"></i>
+                            <span>akhilcaptures08@gmail.com</span>
+                        </li>
+                        <li>
+                            <span>Hyderabad, Telangana, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="box">
+                <p>Copyright © 2024 by <a href="#">AkhilSathwik</a>. All rights reserved.</p>
+            </div>
+            <div class="box">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
